@@ -213,6 +213,8 @@ svg {
 
 table {
   border-collapse: collapse;
+  border-color: #2c9faf;
+
 }
 
 caption {
@@ -584,18 +586,23 @@ pre code {
 }
 
 .container-fluid {
+  overflow: scroll;
   width: 100%;
+  min-height: 80%;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
 }
 
+
 .row {
   display: flex;
+
   flex-wrap: wrap;
   margin-right: -0.75rem;
   margin-left: -0.75rem;
+
 }
 
 .no-gutters {
@@ -1369,6 +1376,8 @@ pre code {
   width: 100%;
   margin-bottom: 1rem;
   color: #858796;
+  box-shadow: 10px 8px 10px #b3e4ec;
+
 }
 
 .table th,
@@ -10986,6 +10995,7 @@ form.user .btn-user {
 footer.sticky-footer {
   padding: 2rem 0;
   flex-shrink: 0;
+
 }
 
 footer.sticky-footer .copyright {
@@ -10995,4 +11005,5 @@ footer.sticky-footer .copyright {
 
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
+  min-height: 100%;
 }
