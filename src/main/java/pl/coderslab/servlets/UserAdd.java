@@ -1,5 +1,6 @@
 package pl.coderslab.servlets;
 
+import org.mindrot.jbcrypt.BCrypt;
 import pl.coderslab.entity.User;
 import pl.coderslab.utils.DaoMethods;
 
@@ -24,13 +25,13 @@ public class UserAdd extends HttpServlet {
         String name = req.getParameter("name");
         String email = req.getParameter("email");
         String password = req.getParameter("password");
-
+    String hashPassword = BCrypt.hashpw(password,BCrypt.gensalt());
         DaoMethods daoMethods = new DaoMethods();
 
         User user = new User();
         user.setUsername(name);
         user.setEmail(email);
-        user.setPassword(password);
+        user.setPassword(hashPassword);
         daoMethods.create(user);
         resp.sendRedirect("/user/list");
 

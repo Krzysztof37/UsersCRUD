@@ -1,5 +1,6 @@
 package pl.coderslab.servlets;
 
+import org.mindrot.jbcrypt.BCrypt;
 import pl.coderslab.entity.User;
 import pl.coderslab.utils.DaoMethods;
 
@@ -34,13 +35,13 @@ Integer idInt;
         String name = req.getParameter("name");
         String email = req.getParameter("email");
         String password = req.getParameter("password");
-
+        String hashPassword = BCrypt.hashpw(password,BCrypt.gensalt());
 
 
         User user = daoMethods.read(idInt);
         user.setUsername(name);
         user.setEmail(email);
-        user.setPassword(password);
+        user.setPassword(hashPassword);
         daoMethods.update(user);
 
         resp.sendRedirect("/user/list");
