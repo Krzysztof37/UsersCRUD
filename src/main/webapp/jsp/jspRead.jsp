@@ -86,15 +86,15 @@
 
         <h2>Edycja użytkownika</h2>
 
-        <form style="border: 1px solid lightslategrey; box-shadow: 10px 10px 10px cornflowerblue; background-color: white" action="/user/read" method="post">
-          <label style="background: whitesmoke; width: 100%; height: 50px; padding: 10px; font-size: large;"><span style="color: #278c9b">Id użytkownika:</span></label><br>
-          <input style="margin-left: 2% ;margin-right:2%; width: 96%" type="text" value="${id}" name="idInt" disabled><br>
-          <label style="margin: 5px">Nazwa użytkownika:</label></br>
-          <input style="margin-left: 2% ;margin-right:2%; width: 96%" type="text" name="name" value="${name}"><br>
-          <label style="margin: 5px">Email:</label></br>
-          <input style="margin-left: 2% ;margin-right:2%; width: 96%" type="text" name="email" value="${email}"><br>
-          <label style="margin: 5px">Hasło:</label></br>
-          <input style="margin-left: 2% ;margin-right:2%; width: 96%" type="text" name="password"></br>
+        <form class="form-style" action="/user/read" method="post">
+          <label class="first-label"><span style="color: #278c9b">Id użytkownika:</span></label><br>
+          <input class="input-style" type="text" value="${id}" name="idInt" disabled><br>
+          <label class="label-style">Nazwa użytkownika:</label></br>
+          <input class="input-style" type="text" name="name" value="${name}"><br>
+          <label class="label-style">Email:</label></br>
+          <input class="input-style" type="text" name="email" value="${email}"><br>
+          <label class="label-style">Hasło:</label></br>
+          <input class="input-style" type="text" name="password"></br>
 
           <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" type="submit" style="margin: 10px"><i class="fas fa-download fa-sm text-white-50"></i> Wyślij</button>
 

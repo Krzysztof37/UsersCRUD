@@ -82,7 +82,7 @@
 
 
                 <table class="table" border="3" rules="rows">
-                    <thead style="background:whitesmoke"><span style="font-size: x-large">Szczegóły użytkownika</span></thead>
+                    <thead class="thead-style"><span style="font-size: x-large">Szczegóły użytkownika</span></thead>
                     <tr><td>Id:</td> <td>${user.getId()}</td></tr>
                     <tr><td>Nazwa użytkownika:</td><td>${user.getUsername()}</td></tr>
                     <tr><td>Email:</td><td>${user.getEmail()}</td></tr>

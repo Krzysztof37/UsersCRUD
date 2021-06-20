@@ -81,11 +81,11 @@
                 </div>
 
 
-                <div style="overflow: auto; height: 100%; white-space: pre">
+                <div class="scroll-table">
                 <table class="table" border="3" RULES="rows">
 
-                    <th1 style="background-color: whitesmoke;font-size: x-large ">Lista użytkowników</th1>
-                    <tr style="background-color: whitesmoke"><td>Id:</td><td>Nazwa użytkownika:</td><td>Email</td><td>Akcja</td>
+                    <th1 class="thead-style"><span style="font-size: x-large ">Lista użytkowników</span></th1>
+                    <tr class="thead-style"><td>Id:</td><td>Nazwa użytkownika:</td><td>Email</td><td>Akcja</td>
                     </tr>
                     <c:forEach items="${userList}" var="user">
                         <tr>
