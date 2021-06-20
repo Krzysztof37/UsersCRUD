@@ -129,7 +129,13 @@ abbr[data-original-title] {
 .thead-style{
   background-color: whitesmoke;
 }
-
+.footer-style{
+  position:absolute;
+  bottom:0;
+  width:85%;
+  height:60px;
+  background-color:white;
+}
 
 address {
   margin-bottom: 1rem;

@@ -92,11 +92,7 @@
 
             </div>
             <!-- Footer -->
-            <footer  style="position:absolute;
-		bottom:0;
-		width:85%;
-		height:60px;
-		background-color: white">
+            <footer class="footer-style">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; Your Website 2021</span>
