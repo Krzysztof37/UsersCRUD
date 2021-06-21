@@ -14,7 +14,7 @@ import java.io.IOException;
 public class UserDelete extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         DaoMethods daoMethods = new DaoMethods();
         String id = req.getParameter("id");
         int idInt = Integer.parseInt(id);

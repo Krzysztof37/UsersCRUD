@@ -30,11 +30,11 @@ public class DaoMethods {
     }
     public void update (User user){
         try(Connection conn = DbUtil.getConnection()){
-            PreparedStatement preste = conn.prepareStatement("UPDATE users set email = ?, username = ?, password = ? WHERE id = ?;");
+            PreparedStatement preste = conn.prepareStatement("UPDATE users set email = ?, username = ? WHERE id = ?;");
             preste.setString(1,user.getEmail());
             preste.setString(2,user.getUsername());
-            preste.setString(3, user.getPassword());
-            preste.setInt(4,user.getId());
+            preste.setInt(3, user.getId());
+
             preste.executeUpdate();
 
         }catch(SQLException e){

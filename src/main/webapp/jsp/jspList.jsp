@@ -89,7 +89,7 @@
                     </tr>
                     <c:forEach items="${userList}" var="user">
                         <tr>
-                            <td>${user.getId()}</td><td>${user.getUsername()}</td><td>${user.getEmail()}</td><td><a href="/user/read?id=${user.getId()}&name=${user.getUsername()}&email=${user.getEmail()}">Edytuj </a><a href="/user/show?id=${user.getId()}">Pokaż </a> <a href="/user/delete?id=${user.getId()}">Usuń</a> </td>
+                            <td>${user.getId()}</td><td>${user.getUsername()}</td><td>${user.getEmail()}</td><td><a href="/user/read?id=${user.getId()}&name=${user.getUsername()}&email=${user.getEmail()}">Edytuj</a> <a href="/user/show?id=${user.getId()}">Pokaż</a><form action="/user/delete" method="post" ><button type="submit" name="id" value="${user.getId()}">Usuń</button></form></td>
                         </tr>
 
 

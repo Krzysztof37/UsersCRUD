@@ -34,14 +34,11 @@ Integer idInt;
         DaoMethods daoMethods = new DaoMethods();
         String name = req.getParameter("name");
         String email = req.getParameter("email");
-        String password = req.getParameter("password");
-        String hashPassword = BCrypt.hashpw(password,BCrypt.gensalt());
 
 
         User user = daoMethods.read(idInt);
         user.setUsername(name);
         user.setEmail(email);
-        user.setPassword(hashPassword);
         daoMethods.update(user);
 
         resp.sendRedirect("/user/list");

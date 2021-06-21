@@ -89,11 +89,11 @@
           <label class="first-label"><span style="color: #278c9b">Dodaj użytkownika </span></label></br>
 
           <label class="label-style">Nazwa użytkownika:</label></br>
-          <input class="input-style" type="text" name="name"><br>
+          <input class="input-style" type="text" name="name" required><br>
           <label class="label-style">Email:</label></br>
-          <input class="input-style" type="text" name="email"><br>
+          <input class="input-style" type="text" name="email" required><br>
           <label class="label-style">Hasło:</label></br>
-          <input class="input-style" type="text" name="password"></br>
+          <input class="input-style" type="text" name="password" required></br>
 
           <br>
           <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" type="submit" style="margin: 10px"><i class="fas fa-download fa-sm text-white-50"></i> Wyślij</button>
